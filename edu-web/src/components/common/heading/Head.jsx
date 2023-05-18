@@ -3,7 +3,7 @@ import React from 'react'
 export const Head = () => {
   return (
     <>
-        <section classname='head'>
+        <section className='head'>
             <div className="container flexSB">
                 <div className="logo">
                     <h1>ACADEMIA</h1>
