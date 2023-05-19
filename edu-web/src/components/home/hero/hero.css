@@ -20,3 +20,16 @@
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width:768px){
+    .margin{
+      height: 40vh;
+    }
+    .hero{
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .hero .row{
+      width: 100%;
+    }
+  }
