@@ -1,5 +1,6 @@
 .aboutHome {
   height: auto;
+  margin-top: 300px;
 }
 .aboutHome #heading {
   text-align: left;
@@ -14,7 +15,7 @@
   padding: 80px 10px;
 }
 .aboutHome .items {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .aboutHome .item {
   background-color: #fff;
