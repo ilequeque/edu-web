@@ -271,7 +271,7 @@ export const team = [
   },
   {
     cover: "./images/team/t6.webp",
-    name: "Ph.D Arthur MaGregor",
+    name: "Ph.D Yerkebulan Akhmetzaki",
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },
   {
