@@ -13,7 +13,7 @@ const AboutCard = () => {
                 <img src="./images/about.jpg" alt="" /> 
            </div>
            <div className="right row">
-                <Title subtitle='LEARN ANYTHING' title= 'Benefits About Online Learning Expertise'/>
+                <Title subtitle='ПОДГОТОВЬСЯ К ЕНТ' title= 'Достоинства Нашей Платформы'/>
                 <div className="items">
                   {homeAbout.map((val) => {
                     return (
@@ -32,7 +32,7 @@ const AboutCard = () => {
             </div> 
         </div>  
       </section>
-      <AWrapper />  
+      {/* <AWrapper />   */}
     </>
   )
 }

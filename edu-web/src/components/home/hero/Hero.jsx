@@ -1,21 +1,27 @@
-import React from 'react'
-import "./hero.css"
-import Title from '../../common/title/Title'
+import React from 'react';
+import './hero.css';
+import Title from '../../common/title/Title';
+import { useHistory } from 'react-router-dom';
 
 const Hero = () => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/login'); // Replace '/login' with the actual login route path
+  };
   return (
     <>
         <section className='hero'>
             <div className="container">
                 <div className="row">
-                    <Title subtitle='WELCOME TO ACADEMIA' title='Best Online Education'/>
-                    <p>ВЫУЧИ АНГЛИЙСКИЙ ЯЗЫК С ОНЛАЙН РЕПЕТИТОРОМ!</p>
-                    <div className="button">
-                        <button className='primary-btn'>
-                            GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
+                    <Title subtitle='Добро Пожаловать в ACADEMIA' title='Онлайн подготовка'/>
+                    <p>ПОДГОТОВЬСЯ К ЕНТ ВМЕСТЕ С НАМИ!</p>
+                    <div className="button" onClick={handleClick}>
+                        <button className='primary-btn' onClick={handleClick}>
+                            НАЧАТЬ СЕЙЧАС <i className='fa fa-long-arrow-alt-right'></i>
                         </button>
                         <button>
-                            VIEW COURSE <i className='fa fa-long-arrow-alt-right'></i>
+                            ПОСМОТРЕТЬ КУРСЫ <i className='fa fa-long-arrow-alt-right'></i>
                         </button>
                     </div>
                 </div>

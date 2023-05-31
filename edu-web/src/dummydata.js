@@ -2,20 +2,20 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Онлайн Курсы",
+    desc: "Учиться можно откуда угодно, нужен только стабильный интернет, смартфон или ноутбук. Это особенно удобно для работающих людей, которым нужно пройти дополнительное обучение. Вебинар можно посмотреть в дороге или в перерывах на работе.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Доступное Образование для Всех",
+    desc: "Еще одним плюсом онлайн-обучения можно считать доступность для людей с ограничениями по здоровью и для тех, кто живет далеко от университетов.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Быстрая Связь с Преподавателем",
+    desc: "Это преимущество электронного обучения перед очными и заочными программами. Необязательно ждать следующей лекции, чтобы задать вопрос. Можно сразу же оставить его в чате или на обучающей платформе.",
   },
 ]
 export const awrapper = [
@@ -171,75 +171,39 @@ export const coursesCard = [
 ]
 export const online = [
   {
-    cover: "./images/courses/online/o1.png",
-    hoverCover: "./images/courses/online/o1.1.png",
-    courseName: "UI/UX Design Courses",
-    course: "25 Courses",
-  },
-  {
-    cover: "./images/courses/online/o2.png",
-    hoverCover: "./images/courses/online/o2.1.png",
-    courseName: "Art & Design",
-    course: "25 Courses",
-  },
-  {
     cover: "./images/courses/online/o3.png",
     hoverCover: "./images/courses/online/o3.1.png",
-    courseName: "Computer Science",
+    courseName: "Химия",
     course: "10 Courses",
   },
   {
     cover: "./images/courses/online/o4.png",
     hoverCover: "./images/courses/online/o4.1.png",
-    courseName: "History & Archeologic",
+    courseName: "История",
     course: "15 Courses",
   },
   {
     cover: "./images/courses/online/o5.png",
     hoverCover: "./images/courses/online/o5.1.png",
-    courseName: "Software Engineering",
+    courseName: "Информатика",
     course: "30 Courses",
-  },
-  {
-    cover: "./images/courses/online/o6.png",
-    hoverCover: "./images/courses/online/o6.1.png",
-    courseName: "Information Software",
-    course: "60 Courses",
   },
   {
     cover: "./images/courses/online/o7.png",
     hoverCover: "./images/courses/online/o7.1.png",
-    courseName: "Health & Fitness",
+    courseName: "Биология",
     course: "10 Courses",
-  },
-  {
-    cover: "./images/courses/online/o8.png",
-    hoverCover: "./images/courses/online/o8.1.png",
-    courseName: "Marketing",
-    course: "30 Courses",
   },
   {
     cover: "./images/courses/online/o9.png",
     hoverCover: "./images/courses/online/o9.1.png",
-    courseName: "Graphic Design",
+    courseName: "Английский Язык",
     course: "80 Courses",
-  },
-  {
-    cover: "./images/courses/online/o10.png",
-    hoverCover: "./images/courses/online/o10.1.png",
-    courseName: "Music",
-    course: "120 Courses",
   },
   {
     cover: "./images/courses/online/o11.png",
     hoverCover: "./images/courses/online/o11.1.png",
-    courseName: "Business Administration",
-    course: "17 Courses",
-  },
-  {
-    cover: "./images/courses/online/o12.png",
-    hoverCover: "./images/courses/online/o12.1.png",
-    courseName: "Web Management",
+    courseName: "Основы Права",
     course: "17 Courses",
   },
 ]
@@ -299,11 +263,6 @@ export const price = [
   {
     name: "PREMIUM PLAN",
     price: "109k",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "ULTIMATE PLAN",
-    price: "149K",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
 ]
