@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './login.css';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('student'); // Default role is student
+  const [errorMessage, setErrorMessage] = useState('');
+  const history = useHistory();
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -18,13 +21,29 @@ const Login = () => {
     setRole(e.target.value);
   };
 
+  const authenticateUser = () => {
+    // Simulate authentication by checking the provided credentials
+    if (username === 'admin' && password === 'password' && role === 'teacher') {
+      return true; // Authentication successful for teacher
+    } else if (username === 'student' && password === 'password' && role === 'student') {
+      return true; // Authentication successful for student
+    } else {
+      return false; // Authentication failed
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your authentication logic here
-    // You can make an API call to authenticate the user or simulate it for now
-    console.log('Username:', username);
-    console.log('Password:', password);
-    console.log('Role:', role);
+
+    if (authenticateUser()) {
+      if (role === 'teacher') {
+        history.push('/teacher-dashboard');
+      } else {
+        history.push('/student-dashboard');
+      }
+    } else {
+      setErrorMessage('Invalid credentials. Please try again.');
+    }
   };
 
   return (
