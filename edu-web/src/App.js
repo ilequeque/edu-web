@@ -9,13 +9,13 @@ import Blog from "./components/blog/Blog"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
-import Login from './components/login/Login'
 
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import Login from './components/Login/Login'
 
 const App = () => {
   return (
