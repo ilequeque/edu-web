@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import { useHistory } from 'react-router-dom';
+import Back from '../common/back/loginback'
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -48,7 +49,7 @@ const Login = () => {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2>LogIn</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
@@ -77,6 +78,7 @@ const Login = () => {
         </div>
         <button type="submit">Login</button>
       </form>
+    <Back title = " "/>
     </div>
   );
 };

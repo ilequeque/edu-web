@@ -20,7 +20,7 @@ export const Header = () => {
                     <li><Link to="/contact">Контакты</Link></li>
                 </ul>
                 <div className="start">
-                    <div className="button">Получить Сертификат</div>
+                    <div className="button"><Link to='/login'>Войти</Link></div>
                 </div>
                 <button className='toggle' onClick={()=> setClick(!click)}>
                     {click ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i> }

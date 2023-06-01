@@ -2,12 +2,13 @@ import React from 'react';
 import './hero.css';
 import Title from '../../common/title/Title';
 import { useHistory } from 'react-router-dom';
+import Login from '../../login/Login';
 
 const Hero = () => {
   const history = useHistory();
 
   const handleClick = () => {
-    history.push('/login'); // Replace '/login' with the actual login route path
+    history.push(Login); // Replace '/login' with the actual login route path
   };
   return (
     <>
