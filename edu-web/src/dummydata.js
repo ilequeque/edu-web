@@ -126,39 +126,34 @@ export const online = [
 export const team = [
   {
     cover: "./images/team/t1.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Alikhan Kanat",
+    work: "CFO",
   },
   {
     cover: "./images/team/t2.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Nargiz Nadirbekova",
+    work: "CMO",
   },
   {
     cover: "./images/team/t3.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t4.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Kamila Berikova",
+    work: "CEO",
   },
 ]
 export const price = [
   {
     name: "BASIC PLAN",
-    price: "49K",
+    price: "10K",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
   {
     name: "BEGINNER PLAN",
-    price: "79K",
+    price: "20K",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
   {
     name: "PREMIUM PLAN",
-    price: "109k",
+    price: "30k",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
 ]
