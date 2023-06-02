@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './login.css';
 import { useHistory } from 'react-router-dom';
 import Back from '../common/back/loginback';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import './login.css';
 
-const Login = () => {
+const Signup = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('student'); // Default role is student
+  const [email, setEmail] = useState('');
+  const [role, setRole] = useState('student');
   const [errorMessage, setErrorMessage] = useState('');
   const history = useHistory();
 
@@ -19,39 +19,32 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  
   const handleRoleChange = (e) => {
     setRole(e.target.value);
   };
 
-  const authenticateUser = () => {
-    // Simulate authentication by checking the provided credentials
-    if (username === 'admin' && password === 'password' && role === 'teacher') {
-      return true; // Authentication successful for teacher
-    } else if (username === 'student' && password === 'password' && role === 'student') {
-      return true; // Authentication successful for student
-    } else {
-      return false; // Authentication failed
-    }
-  };
-
-  const handleSubmit = (e) => {
+  const handleSignup = (e) => {
     e.preventDefault();
 
-    if (authenticateUser()) {
-      if (role === 'teacher') {
-        history.push('/teacher-dashboard');
-      } else {
-        history.push('/student-dashboard');
-      }
+    // Simulate signup success
+    const isSignupSuccessful = true; // Replace with your signup logic result
+
+    if (isSignupSuccessful) {
+      // Navigate the user to the login page after successful signup
+      history.push('/login');
     } else {
-      setErrorMessage('Invalid credentials. Please try again.');
+      setErrorMessage('Signup failed. Please try again.');
     }
   };
 
   return (
     <div className='log'>
-      <h2>LogIn</h2>
-      <form onSubmit={handleSubmit}>
+      <h2>Signup</h2>
+      <form onSubmit={handleSignup}>
         <div>
           <label htmlFor="username">Username:</label>
           <input
@@ -71,16 +64,24 @@ const Login = () => {
           />
         </div>
         <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+        </div>
+        <div>
           <label htmlFor="role">Role:</label>
           <select id="role" value={role} onChange={handleRoleChange}>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
           </select>
         </div>
-      {errorMessage && <p className="error">{errorMessage}</p>}
+        {errorMessage && <p className="error">{errorMessage}</p>}
         <div className='buttons'>
-          <button type="submit">Login</button>
-          <button type="submit"><Link to="/signup"><span>SignUp</span></Link></button>
+          <button type="submit">Signup</button>
         </div>
       </form>
     <Back title = " "/>
@@ -88,4 +89,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

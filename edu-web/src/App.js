@@ -10,6 +10,10 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Login from './components/login/Login'
+import Signup from './components/login/register'
+import StudentDashboard from './components/dashboards/StudentDashboard'
+import TeacherDashboard from './components/dashboards/TeacherDashboard'
+import ChemistryMaterials from "./components/materials/ChemistryMaterials";
 
 import {
   BrowserRouter as Router,
@@ -31,6 +35,10 @@ const App = () => {
           <Route exact path='/journal' component={Blog} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Signup} />
+          <Route exact path='/student-dashboard' component={StudentDashboard} />
+          <Route exact path='/teacher-dashboard' component={TeacherDashboard} />
+          <Route path="/courses/химия" component={ChemistryMaterials} />
          </Switch>
          <Footer />
       </Router>

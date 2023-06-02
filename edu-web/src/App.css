@@ -36,6 +36,7 @@ a {
 }
 li {
   list-style-type: none;
+  margin-top: 5px;
 }
 button{
   border: none;
@@ -100,7 +101,7 @@ p{
   text-align: center;
 }
 .backer{
-  background-image: url("../public/images/backer.jpg");
+  background-color:turquoise;;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -114,6 +115,21 @@ p{
   color: #fff;
   text-align: center;
 }
+.backo{
+  background-color:turquoise;;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0vh;
+  padding-top: 20%;
+  padding-right: 50px;
+  color: #fff;
+  text-align: center;
+}
 .back h1{
   font-size: 100px;
   font-weight: 400;
@@ -122,6 +138,7 @@ p{
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
+  margin-top: -30px;
 }
 .marigin{
   margin-top: 35%;

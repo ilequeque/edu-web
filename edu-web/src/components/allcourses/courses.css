@@ -64,6 +64,9 @@
 .online {
   text-align: center;
 }
+.online .container {
+  margin-bottom: 80px;
+}
 .online .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;

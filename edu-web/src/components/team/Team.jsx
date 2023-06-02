@@ -2,7 +2,6 @@ import React from "react"
 import Back from "../common/back/Back"
 import TeamCard from "./TeamCard"
 import "./team.css"
-import AWrapper from "../about/AWrapper"
 import "../about/about.css"
 
 const Team = () => {
@@ -14,7 +13,6 @@ const Team = () => {
           <TeamCard />
         </div>
       </section>
-      <AWrapper />
     </>
   )
 }
