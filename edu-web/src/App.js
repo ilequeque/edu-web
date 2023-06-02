@@ -14,6 +14,7 @@ import Signup from './components/login/register'
 import StudentDashboard from './components/dashboards/StudentDashboard'
 import TeacherDashboard from './components/dashboards/TeacherDashboard'
 import ChemistryMaterials from "./components/materials/ChemistryMaterials";
+import HistoryMaterials from "./components/materials/HistoryMaterials";
 
 import {
   BrowserRouter as Router,
@@ -39,6 +40,7 @@ const App = () => {
           <Route exact path='/student-dashboard' component={StudentDashboard} />
           <Route exact path='/teacher-dashboard' component={TeacherDashboard} />
           <Route path="/courses/химия" component={ChemistryMaterials} />
+          <Route path="/courses/история" component={HistoryMaterials} />
          </Switch>
          <Footer />
       </Router>

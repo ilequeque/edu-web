@@ -9,7 +9,7 @@ const OnlineCourses = () => {
     <>
       <section className='online'>
         <div className='container'>
-          <Heading subtitle='COURSES' title='Наши Онлайн Курсы' />
+          <Heading title='Наши Онлайн Курсы' />
           <div className='content grid3'>
             {online.map((val) => (
               <Link to={`/courses/${val.courseName.toLowerCase()}`} className="box">

@@ -1,14 +1,14 @@
 import React from "react";
 import "./st.css"
 import Back from '../common/back/test';
-import { chemistry } from "../../dummydata"
+import { history } from "../../dummydata"
 
 
 
-const ChemistryMaterials = () => {
+const HistoryMaterials = () => {
   return (
     <div className="items">
-      {chemistry.map((lecture) => (
+      {history.map((lecture) => (
         <div key={lecture.title}>
           <div className="title">
             <h3>{lecture.title}</h3>
@@ -21,4 +21,4 @@ const ChemistryMaterials = () => {
   );
 };
 
-export default ChemistryMaterials;
+export default HistoryMaterials;

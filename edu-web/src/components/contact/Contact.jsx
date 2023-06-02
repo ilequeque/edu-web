@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <>
-      <Back title='Contact us' />
+      <Back title='Свяжитесь с Нами' />
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           {/* Left Section */}

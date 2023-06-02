@@ -6,6 +6,7 @@ const Back = ({title}) => {
   return (
     <>
         <section className='backo'>
+            <h1>{title}</h1>
         </section>
     </>
   )

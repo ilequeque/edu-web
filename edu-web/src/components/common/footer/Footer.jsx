@@ -9,11 +9,10 @@ const Footer = () => {
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
-            <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
+            <h1>Подпишитесь и получайте новости о нас</h1>
           </div>
           <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
+            <input type='text' placeholder='напишите свой почтовый адрес' />
             <i className='fa fa-paper-plane'></i>
           </div>
         </div>
@@ -30,7 +29,7 @@ const Footer = () => {
             <i className='fab fa-instagram icon'></i>
           </div>
           <div className='box link'>
-            <h3>Quick Links</h3>
+            <h3>Быстрые Ссылки</h3>
             <ul>
               <li><Link to="/contact">Контакты</Link></li>
               <li><Link to="/pricing">Цены</Link></li>
@@ -39,7 +38,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='box last'>
-            <h3>Have a Questions?</h3>
+            <h3>Остались вопросы?</h3>
             <ul>
               <li>
                 <i className='fa fa-map'></i>

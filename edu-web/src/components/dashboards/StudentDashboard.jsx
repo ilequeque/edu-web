@@ -1,6 +1,5 @@
 import React from 'react';
-import Back from "../common/back/Back"
-import CoursesCard from "../allcourses/CoursesCard"
+import Back from "../common/back/test"
 import OnlineCourses from "../allcourses/OnlineCourses"
 
 const StudentDashboard = () => {
