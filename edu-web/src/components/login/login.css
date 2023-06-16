@@ -77,3 +77,10 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.check p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
